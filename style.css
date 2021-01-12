@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .explosion {
+  background-image: url(explosion.mp4);
+  background-size: 100%;
+} */
+.bcg {
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgb(206, 170, 170), #686f72);
+}
+.bcg2 {
+  position: relative;
+  widows: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bcg2 {
+  font-size: 6em;
+  color: #282c2e;
+  text-shadow: 15px 15px 0 rgba(0, 0, 0, 0, 0.1);
+  mix-blend-mode: screen;
+}
+.bcg2 h2 span {
+  display: inline-block;
+  animation: animate 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate {
+  from {
+    transform: translate(-500px);
+  }
+  to {
+    transform: translate(500px);
+  }
+
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+}
+.field {
+  padding: 0;
+  height: 0;
+  background-color: rgb(82, 65, 65);
+  box-shadow: inset 0 20px 10px #680c68;
+}
+.field h2 {
+  color: rgb(247, 240, 240);
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.field a {
+  background-color: rgb(128, 116, 116);
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.bouton {
+  text-align: center;
+}
+a:hover {
+  background-color: rgb(177, 164, 164);
+}
